@@ -3,7 +3,6 @@ import Cart from '../Cart/Cart';
 import Shop from '../Shop/Shop';
 import './Shops.css'
 
-
 const Shops = () => {
     const [products,setProducts]=useState([])
     const[productPrice,setProductPrice]=useState([])
@@ -20,6 +19,11 @@ const Shops = () => {
         
     }
 
+    const removedata=()=>{
+      
+        setProductPrice([])
+    }
+
     return (
         <div>
             <div className='shop-container'>
@@ -34,7 +38,9 @@ const Shops = () => {
 
                 <div className='cart'>
                    <Cart cart={productPrice}></Cart>
+                   <button onClick={()=> removedata()} className='mx-5 btn btn-danger btn-style'>remove</button>
                 </div>
+                
             </div>
         </div>
     );

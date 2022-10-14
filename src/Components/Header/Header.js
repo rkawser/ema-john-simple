@@ -3,16 +3,17 @@ import React from 'react';
 import './Header.css'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import logo from '../../images/Logo.svg'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-    return (
+  return (
     <Navbar className='bg-dark' expand="lg">
       <Container fluid>
 
         <Navbar.Brand className='text-light' href="#">
-            
-            <img src={logo}  alt="" />
-        </Navbar.Brand> 
+
+          <img src={logo} alt="" />
+        </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -22,16 +23,16 @@ const Header = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link className='text-light fw-bold' href="#action1">Home</Nav.Link>
-            <Nav.Link className='text-light fw-bold' href="#action2">shop</Nav.Link>
-            <Nav.Link className='text-light fw-bold' href="#action2">Order</Nav.Link>
-            <Nav.Link className='text-light fw-bold' href="#action2">Manage</Nav.Link>
+            <Link to='/' className='text-light fw-bold text-decoration-none me-2' href="#action1">Home</Link>
+            <Link to='/shops' className='text-light fw-bold text-decoration-none me-2' href="#action2">shops</Link>
+            <Link to='/order' className='text-light fw-bold text-decoration-none me-2' href="#action2">Order</Link>
+            <Link to='/manage' className='text-light fw-bold text-decoration-none me-2' href="#action2">Manage</Link>
           </Nav>
-          
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    );
+  );
 };
 
 export default Header;

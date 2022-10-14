@@ -11,5 +11,10 @@
 }
 
 .cart{
-    text-align: justify;
+    text-align:justify;
+}
+
+.btn-style{
+    position: sticky;
+    top:300px;
 }
