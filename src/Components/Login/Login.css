@@ -1,0 +1,55 @@
+
+
+.login-container{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.login-btn{
+    color: blanchedalmond;
+    background-color: black;
+    border-radius: 5px;
+    height: 50px;
+    transition: 0.6s;
+    border: none;
+}
+
+
+.login-btn:hover{
+    background-color: bisque;
+    color: black;
+}
+
+.signOut-btn{
+    background-color: black;
+    color: red;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    transition: 0.6s;
+}
+
+.signOut-btn:hover{
+    background-color: red;
+    color: whitesmoke;
+}
+
+
+form {
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding:10px;
+    margin: 0px 5px;
+}
+
+form input{
+    width: 50%;
+    margin: 7px auto;
+    border-radius: 5px;
+    padding: 10px;
+    border:none;
+    font-weight: 600;
+    background-color: black;
+    color: aqua;
+}
